@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253661"
+    android:orientation="vertical"
+    tools:context=".OrderDetailsActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="411dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/balls" />
+
+    <TextView
+        android:id="@+id/tv_you_ordered"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/luckiestguy_regular"
+        android:text="@string/you_ordered"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_orderedPokemon"
+                android:layout_width="211dp"
+                android:layout_height="193dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:hint="You are?"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_customerCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="sans-serif-black"
+                android:hint="Cellphone"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/btn_star_big_off" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

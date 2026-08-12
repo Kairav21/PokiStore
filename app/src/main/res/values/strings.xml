@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">PokiStore</string>
+    <string name="welcome_message">Welcome to The PokiStore</string>
+    <string name="pokemon_list" translatable="false">pokemon list</string>
+    <string name="you_ordered" translatable="false">You Ordered</string>
+    <string name="place_and_order" translatable="false">Place and order</string>
+    <string name="take_a_photo" translatable="false">Take a Photo</string>
+    <string name="navigation_drawer_open" translatable="false">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close Navigation Drawer</string>
+    <string name="take_pic">take pic</string>
+</resources>
